@@ -5,7 +5,14 @@ export default createStore({
     count: 0,
     memos: [],
   },
-  getters: {},
+  getters: {
+    getCount: (state) => {
+      return state.memos.length;
+    },
+    getAll: (state) => {
+      return state.memos;
+    },
+  },
   mutations: {
     save(state, newMemo) {
       newMemo.id = ++state.count;
