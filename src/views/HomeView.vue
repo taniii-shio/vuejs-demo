@@ -3,7 +3,7 @@
     <ul v-if="hasMemos">
       <li v-for="memo in memos" :key="memo.id">{{memo.title}}</li>
     </ul>
-    <p v-else>メモはありません</p>
+    <p v-else>メモはありません、編集テスト</p>
   </div>
 </template>
 
